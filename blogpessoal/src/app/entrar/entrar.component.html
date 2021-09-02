@@ -6,15 +6,15 @@
                 <h1 class="txt-center mb-3">Olá, vamos nessa?</h1>
                 <div class="form-group">
                     <label for="usuario">Usuario</label>
-                    <input class="form-control" type="text" name="usuario" id="usuario"
+                    <input [(ngModel)]='userLoguin.usuario' class="form-control" type="text" name="usuario" id="usuario"
                         placeholder="Deixe seu usuario aqui">
                 </div>
                 <div class="form-group">
                     <label for="senha">Senha</label>
-                    <input class="form-control" type="password" name="senha" id="senha" placeholder="a sua senha aqui">
+                    <input  [(ngModel)]='userLoguin.senha'class="form-control" type="password" name="senha" id="senha" placeholder="a sua senha aqui">
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-sucess">Embarcar</button>
+                    <button type="submit" class="btn btn-sucess" (click)='entrar()'>Entrar</button>
                 </div>
 
                 <hr class="mt-5 mb-5">
